@@ -1,0 +1,62 @@
+controller:
+  adminUsername: admin
+  adminPassword: admin
+  additionalPlugins:
+    - kubernetes:3734.v562b_b_a_627ea_c
+    - git:4.13.0
+    - configuration-as-code:1429.v09b_044a_c93de
+    - job-dsl:1.77
+  JCasC:
+    defaultConfig: true
+    configScripts:
+      welcome-message: |
+        jenkins:
+          systemMessage: Jenkins-Helm!
+      job-config: |
+        jobs:
+          - script: >
+              folder('jcasc')
+          - script: >
+              pipelineJob('jcasc/default-agent') {
+                definition {
+                  cps {
+                    script("""\
+                    pipeline {
+                      agent {
+                        kubernetes {
+                          yaml '''
+                            apiVersion: v1
+                            kind: Pod
+                            metadata:
+                              labels:
+                                purpose: k8s-pod-as-a-jenkins-agent
+                            spec:
+                              containers:
+                              - name: busybox
+                                image: busybox
+                                command:
+                                - cat
+                                tty: true
+                                resources:
+                                  requests:
+                                    memory: "256mi"
+                                    cpu: "100m"
+                            '''
+                        }
+                      }
+                      stages {
+                        stage('run busybox') {
+                          steps {
+                            container('busybox') {
+                              sh '/bin/busybox'
+                            }
+                          }
+                        }
+                      }
+                    }
+                    """.stripIndent())
+                    sandbox()
+                  }
+                }
+              }
+  serviceType: NodePort
