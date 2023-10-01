@@ -6,7 +6,8 @@ A provider in Terraform is a plugin that enables interaction with an API. This i
 Stick to a provider version that ensures there are no breaking changes.
 ## terrafprm main file
 main.tf will contain the main set of configurations for your module.
-Install provider
+# run terraform code
+##Install provider
 
 ```shell
 terraform init
