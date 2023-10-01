@@ -7,7 +7,7 @@ Stick to a provider version that ensures there are no breaking changes.
 ## terrafprm main file
 main.tf will contain the main set of configurations for your module.
 # run terraform code
-##Install provider
+Install provider
 
 ```shell
 terraform init
