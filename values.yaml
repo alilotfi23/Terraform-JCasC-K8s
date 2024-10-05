@@ -1,6 +1,6 @@
 controller:
-  adminUsername: admin
-  adminPassword: admin
+  adminUsername: admin # username for jenkins
+  adminPassword: admin # password for jenkins
   additionalPlugins:
     - kubernetes:3734.v562b_b_a_627ea_c
     - git:4.13.0
