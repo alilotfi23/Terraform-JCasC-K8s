@@ -1,5 +1,5 @@
 # Terraform-JCasC-K8s
-Deploying Jenkins(JCasC) on Kubernetes with Helm and Terraform
+Deploying Jenkins(JCasC) on Kubernetes with Helm and Terraform.
 ## terraform provider file
 A provider in Terraform is a plugin that enables interaction with an API. This includes Cloud providers and Software-as-a-service providers. The providers are specified in the Terraform configuration code. They tell Terraform which services it 
 ## terraform versions file
