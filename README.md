@@ -22,7 +22,7 @@ The terraform apply command is used to apply the changes required to reach the d
 terraform apply
 ```
 # Helm
-Helm is a tool that automates the creation, packaging, configuration, and deployment of Kubernetes applications by combining your configuration files into a single reusable package.
+Helm is a tool that automates Kubernetes applications' creation, packaging, configuration, and deployment by combining your configuration files into a single reusable package.
 ## values.yaml
 All Helm-packed applications have associated values.yaml file which dictates the configuration of an application.
 # JCasC
