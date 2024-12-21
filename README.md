@@ -1,5 +1,3 @@
----
-
 # Terraform-JCasC-K8s
 
 ## Overview
@@ -54,5 +52,3 @@ Each Helm chart includes a `values.yaml` file that defines the configuration opt
 
 ## Jenkins Configuration as Code (JCasC)
 **Jenkins Configuration as Code (JCasC)** is a feature that allows you to define Jenkins configuration parameters in a human-readable YAML file. This configuration can be version-controlled and treated as source code, making it easy to manage and replicate Jenkins setups across different environments.
-
----
