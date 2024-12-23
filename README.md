@@ -15,7 +15,7 @@ This repository provides a comprehensive guide to deploying Jenkins using Jenkin
 A **provider** in Terraform is a plugin that facilitates interaction with various APIs, including cloud providers and Software-as-a-Service (SaaS) platforms. Providers are defined in the Terraform configuration files, specifying which services Terraform will manage.
 
 ## Terraform Versions
-To maintain stability and avoid breaking changes, it's advisable to pin your provider versions in your configuration. This ensures compatibility and reduces the risk of unexpected issues during deployment.
+Pin your provider versions in your configuration to maintain stability and avoid breaking changes. This ensures compatibility and reduces the risk of unexpected issues during deployment.
 
 ## Terraform Main Configuration
 The `main.tf` file serves as the central configuration file for your Terraform module. It contains the primary settings and resources that define your infrastructure.
