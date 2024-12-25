@@ -18,7 +18,7 @@ A **provider** in Terraform is a plugin that facilitates interaction with variou
 Pin your provider versions in your configuration to maintain stability and avoid breaking changes. This ensures compatibility and reduces the risk of unexpected issues during deployment.
 
 ## Terraform Main Configuration
-The `main.tf` file serves as the central configuration file for your Terraform module. It contains the primary settings and resources that define your infrastructure.
+The `main.tf` file is your Terraform module's central configuration file. It contains the primary settings and resources that define your infrastructure.
 
 ## Running Terraform Code
 To deploy your infrastructure using Terraform, follow these steps:
